@@ -736,6 +736,13 @@
 										gmutp[p][q] = gmutp[p][q]+0.5;
 						
 									}
+
+									else if((cstr[p] === "2" && cstr[q] === "1") || (cstr[p] === "1" && cstr[q] === "2")){
+										
+										if(tflag == 0){gmut[p][q] = gmut[p][q]+0.5;}
+										gmutp[p][q] = gmutp[p][q]+0.5;
+						
+									}
 									
 									else if((cstr[p] === "1" && cstr[q] === "1")){
 									
@@ -753,6 +760,13 @@
 									
 							
 									if((cstr[p] === "0" && cstr[q] === "1") || (cstr[p] === "1" && cstr[q] === "0")){
+									
+										if(tflag == 0){dmut[p][q] = dmut[p][q]+1;}
+										dmutp[p][q] = dmutp[p][q]+1;
+						
+									}
+
+									else if((cstr[p] === "2" && cstr[q] === "1") || (cstr[p] === "1" && cstr[q] === "2")){
 									
 										if(tflag == 0){dmut[p][q] = dmut[p][q]+1;}
 										dmutp[p][q] = dmutp[p][q]+1;
